@@ -1,0 +1,19 @@
+{
+	"name": "CNJS-TabSwitcher-TEST",
+	"version": "0.1.0",
+	"main": "Gruntfile.js",
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-bower": "~0.9.1",
+		"load-grunt-tasks": "~0.2.0"
+	},
+	"scripts": {
+		"postinstall": "bower install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cnelson87/CNJS-TabSwitcher-TEST"
+	},
+	"author": "cnelson87@gmail.com",
+	"readmeFilename": "README.md"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "CNJS-TabSwitcher-TEST",
+	"version": "0.1.0",
+	"main": "Gruntfile.js",
+	"dependencies": {
+		"jquery": "~2.1.0",
+		"cnelson87/CNJS-TabSwitcher": ""
+	}
+}

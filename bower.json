@@ -4,6 +4,6 @@
 	"main": "Gruntfile.js",
 	"dependencies": {
 		"jquery": "~2.1.0",
-		"cnelson87/CNJS-TabSwitcher": ""
+		"CNJS-TabSwitcher-NEW": ""
 	}
 }

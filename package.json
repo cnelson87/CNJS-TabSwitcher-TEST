@@ -1,5 +1,5 @@
 {
-	"name": "CNJS-TabSwitcher-TEST",
+	"name": "CNJS-TabSwitcher-TEST-SITE",
 	"version": "0.1.0",
 	"main": "Gruntfile.js",
 	"devDependencies": {
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cnelson87/CNJS-TabSwitcher-TEST"
+		"url": "https://github.com/cnelson87/CNJS-TabSwitcher-TEST-SITE"
 	},
 	"author": "cnelson87@gmail.com",
 	"readmeFilename": "README.md"

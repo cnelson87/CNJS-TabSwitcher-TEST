@@ -1,3 +1,3 @@
-# CNJS-TabSwitcher-TEST
+# CNJS-TabSwitcher-TEST-SITE
 
-Test site for CNJS-TabSwitcher
+Test Site for CNJS-TabSwitcher

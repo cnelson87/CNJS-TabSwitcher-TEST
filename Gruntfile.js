@@ -4,33 +4,39 @@ module.exports = function(grunt) {
 	'use strict';
 
 	var path = require('path');
+	var pkg = grunt.file.readJSON('package.json');
 
 
-	// Project configuration.
+	// Grunt task configuration
 	grunt.initConfig({
 
 		// Metadata
-		pkg			: grunt.file.readJSON('package.json'),
+		pkg			: pkg,
 		pkgName		: '<%= pkg.name %>',
-		pkgDesc		: '<%= pkg.description %>',
+		portNum		: '<%= pkg.portNumber %>',
+		lrPortNum	: '<%= pkg.livereloadPortNum %>',
 
+		// public file paths
+		publicPath			: './public',
+		publicAssets		: '<%= publicPath %>/assets',
 
 		// Copy bower files
 		'bower': {
 			dev: {
-				dest: './assets'
+				dest: '<%= publicAssets %>'
 			}
 		}
-
 
 	});
 	// end Grunt task config
 
-	// Load task dependencies
-	require('load-grunt-tasks')(grunt);
+
+	// Load task plugins
+	grunt.loadNpmTasks('grunt-bower');
 
 
 	// Register custom tasks
 	grunt.registerTask('build', ['bower']);
+	grunt.registerTask('run', ['build']);
 
 };

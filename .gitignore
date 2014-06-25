@@ -10,3 +10,7 @@ node_modules/
 
 # Bower packages folder.
 bower_components/
+
+# Build folders.
+local/
+public/

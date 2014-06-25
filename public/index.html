@@ -10,11 +10,13 @@
 	<link rel="stylesheet" href="assets/TabSwitcher.css" />
 
 	<script src="assets/jquery.js"></script>
+	<script src="assets/jquery.easing.js"></script>
+	<script src="assets/Class.js"></script>
 	<script src="assets/TabSwitcher.js"></script>
 
 	<script>
 		$(function() {
-			var $el = $('#tabswitcher-example');
+			var $el = $('#tabswitcher');
 			var exTabSwitcher = new TabSwitcher( $el, {} );
 		});
     </script>
@@ -24,7 +26,7 @@
 
 	<h1>CNJS TabSwitcher TEST SITE</h1>
 
-	<div id="tabswitcher-example" class="tabswitcher">
+	<div id="tabswitcher" class="tabswitcher">
 
 		<nav class="tabnav">
 			<ul>

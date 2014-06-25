@@ -22,7 +22,10 @@ module.exports = function(grunt) {
 
 		// Copy bower files
 		'bower': {
-			dev: {
+			assets: {
+				options: {
+					stripJsAffix: true
+				},
 				dest: '<%= publicAssets %>'
 			}
 		}

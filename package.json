@@ -6,10 +6,7 @@
 	"livereloadPortNum": 36363,
 	"devDependencies": {
 		"grunt": "~0.4.4",
-		"grunt-bower": "~0.9.1"
-	},
-	"scripts": {
-		"postinstall": "bower install"
+		"grunt-bower": "~0.13.4"
 	},
 	"repository": {
 		"type": "git",

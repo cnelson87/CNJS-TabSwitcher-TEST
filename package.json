@@ -2,8 +2,6 @@
 	"name": "CNJS-TabSwitcher-TEST-SITE",
 	"version": "0.1.0",
 	"main": "Gruntfile.js",
-	"portNumber": 3636,
-	"livereloadPortNum": 36363,
 	"devDependencies": {
 		"grunt": "~0.4.4",
 		"grunt-bower": "~0.13.4"

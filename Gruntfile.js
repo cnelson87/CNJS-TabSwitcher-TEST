@@ -13,8 +13,6 @@ module.exports = function(grunt) {
 		// Metadata
 		pkg			: pkg,
 		pkgName		: '<%= pkg.name %>',
-		portNum		: '<%= pkg.portNumber %>',
-		lrPortNum	: '<%= pkg.livereloadPortNum %>',
 
 		// public file paths
 		publicPath			: './public',

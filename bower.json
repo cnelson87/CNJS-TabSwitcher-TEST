@@ -5,6 +5,5 @@
 	"dependencies": {
 		"jquery": "~2.1.1",
 		"CNJS-TabSwitcher": ""
-		//"TabSwitcher": "git@dev-vs-gitlab1:bower-components/tabswitcher.git"
 	}
 }

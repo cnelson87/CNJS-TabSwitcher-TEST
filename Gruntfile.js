@@ -22,7 +22,9 @@ module.exports = function(grunt) {
 		'bower': {
 			assets: {
 				options: {
-					stripJsAffix: true
+					stripJsAffix: true,
+					keepExpandedHierarchy: false,
+					expand: false
 				},
 				dest: '<%= publicAssets %>'
 			}

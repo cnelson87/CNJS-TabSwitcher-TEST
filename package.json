@@ -1,15 +1,19 @@
 {
 	"name": "CNJS-TabSwitcher-TEST-SITE",
-	"version": "0.1.0",
+	"description": "Test site for TabSwitcher component",
+	"version": "0.2.0",
 	"main": "Gruntfile.js",
+	"authors": [
+		"Chris Nelson <cnelson87@gmail.com>"
+	],
 	"devDependencies": {
 		"grunt": "~0.4.5",
-		"grunt-bower": "~0.17.0"
+		"grunt-bower": "~0.20.0",
+		"grunt-contrib-copy": "~0.8.0"
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/cnelson87/CNJS-TabSwitcher-TEST-SITE"
 	},
-	"author": "cnelson87@gmail.com",
 	"readmeFilename": "README.md"
 }

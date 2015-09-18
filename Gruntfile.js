@@ -14,19 +14,39 @@ module.exports = function(grunt) {
 		pkg			: pkg,
 		pkgName		: '<%= pkg.name %>',
 
-		// public file paths
+		// file paths
+		sourcePath			: './src',
 		publicPath			: './public',
-		publicAssets		: '<%= publicPath %>/assets',
 
-		// Copy bower files
+		// Copy bower installed components to dist folder.
 		'bower': {
-			assets: {
+			install: {
+				dest: '<%= publicPath %>/assets/',
 				options: {
 					stripJsAffix: true,
 					keepExpandedHierarchy: false,
 					expand: false
-				},
-				dest: '<%= publicAssets %>'
+				}
+			}
+		},
+
+		// Copy files and folders.
+		'copy': {
+			html: {
+				files: [{
+					cwd: '<%= sourcePath %>/html/',
+					src: '**/*.*',
+					dest: '<%= publicPath %>/',
+					expand: true
+				}]
+			},
+			styles: {
+				files: [{
+					cwd: '<%= sourcePath %>/styles/',
+					src: '**/*.*',
+					dest: '<%= publicPath %>/assets/',
+					expand: true
+				}]
 			}
 		}
 
@@ -36,10 +56,11 @@ module.exports = function(grunt) {
 
 	// Load task plugins
 	grunt.loadNpmTasks('grunt-bower');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 
 	// Register custom tasks
-	grunt.registerTask('build', ['bower']);
+	grunt.registerTask('build', ['copy', 'bower']);
 	grunt.registerTask('run', ['build']);
 
 };

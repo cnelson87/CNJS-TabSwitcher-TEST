@@ -2,7 +2,7 @@
 	"name": "CNJS-TabSwitcher-TEST-SITE",
 	"version": "0.2.3",
 	"dependencies": {
-		"jquery": "~2.2.1",
+		"jquery": "~2.2.4",
 		"CNJS-TabSwitcher": ""
 	}
 }
